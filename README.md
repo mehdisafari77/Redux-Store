@@ -2,7 +2,7 @@
 A Fullstack E-commerce website where users can view products, add products to their cart and checkout with stripe, using REDUX for state management.
 
 ## Deployed Link
-https://shop-stripe-mehdi.herokuapp.com/
+https://redux-store-mehdi.herokuapp.com/
 
 ## Screenshot Of Website
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/75599021/144123218-81201d81-671e-4232-8263-acc9e41775ad.gif)
