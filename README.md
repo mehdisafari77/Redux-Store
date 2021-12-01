@@ -1,5 +1,5 @@
 # Shop-Stripe
-A Fullstack E-commerce website where users can view products, add products to their cart and checkout with stripe.
+A Fullstack E-commerce website where users can view products, add products to their cart and checkout with stripe, using REDUX for state management.
 
 ## Deployed Link
 https://shop-stripe-mehdi.herokuapp.com/
@@ -15,6 +15,7 @@ https://shop-stripe-mehdi.herokuapp.com/
 * [React.js](https://reactjs.org/)
 * [Apollo](https://www.apollographql.com/)
 * [Stripe](https://stripe.com/en-gb-us)
+* [Redux](https://redux.js.org/)
 
 ## Installation Steps For Local Running
 1. Clone project.
@@ -25,24 +26,12 @@ https://shop-stripe-mehdi.herokuapp.com/
     - cd ..
     - npm run develop
 
-## Code Snippet Of Order Model 
+## Code Snippet Of Store.js 
 ```javascript
-const mongoose = require('mongoose');
+import { createStore } from 'redux'
+import { reducers } from './reducers'
 
-const { Schema } = mongoose;
-
-const orderSchema = new Schema({
-  purchaseDate: {
-    type: Date,
-    default: Date.now
-  },
-  products: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: 'Product'
-    }
-  ]
-});
+export default createStore(reducers) 
 ```
 
 ## Author
